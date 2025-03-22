@@ -10,6 +10,8 @@ export const generateToken = (user, message, statusCode, res) => {
     })
     .json({
       success: true,
+      secure:true,
+      sameSite:"None"
       message,
       user,
       token,
